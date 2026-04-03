@@ -28,7 +28,9 @@ La traslación es la operación más fundamental, consistente en mover un objeto
 
 * 2.1.2. Escalamiento y Proporciones Geométricas
 El escalamiento permite alterar el tamaño de un objeto mediante la multiplicación de sus coordenadas por factores de escala específicos s_x y s_y. La naturaleza del escalamiento depende de la relación entre estos factores. El escalamiento uniforme se presenta cuando s_x = s_y, lo que garantiza que el objeto conserve su forma original y sus proporciones relativas, variando únicamente su magnitud espacial. Por el contrario, el escalamiento diferencial ocurre cuando s_x \neq s_y, lo que introduce una distorsión en la forma, convirtiendo, por ejemplo, un cuadrado en un rectángulo o un círculo en una elipse. Los valores de los factores de escala determinan el efecto visual: valores superiores a 1 producen un agrandamiento, mientras que valores entre 0 y 1 resultan en una reducción del tamaño. Es fundamental señalar que el escalamiento estándar se realiza con respecto al origen de coordenadas, lo que implica que el objeto no solo cambia de tamaño sino que también se desplaza en el plano a menos que se aplique una técnica de punto fijo.
+
 ![Escalamiento](imagenes/Escala.png)
+
 
 * 2.1.3. Rotación y Orientación Angular
 La transformación de puntos de un objeto situados en trayectorias circulares es llama rotación. Este tipo de transformación se especifica con un ángulo de rotación, el cual determina la cantidad de rotación de cada vértice de un polígono. 
@@ -37,6 +39,7 @@ Para rotar un objeto (en este caso bidimensional), se ha de determinar la cantid
 
 Los puntos también pueden ser rotados un ángulo θ con respecto al origen.
 Ejemplo En la figura se muestra la rotación de la casa 45º, con respecto al origen.
+
 ![Rotación](imagenes/rotacion.jpg)
 
  * 2.1.4. Sesgado
@@ -46,7 +49,10 @@ Existen dos modalidades principales de esta operación:
 
 1. Sesgo horizontal:Las coordenadas adyacentes al eje x permanecen fijas, los valores de y no cambian. 
 2. Sesgo vertical: Las coordenadas adyacentes al eje y permanecen fijas, los valores de x no cambian.
+
+ 
    ![Sesgo](imagenes/sesgo.jpg)
+
 
 ### 2.2.Representación matricial de las transformaciones
 En el script desarrollado, cada vez que presionamos una flecha del teclado, estamos aplicando una Traslación. En computación gráfica, una traslación en un plano 2D se representa mediante una matriz de transformación de 3 x 3 (usando coordenadas homogéneas).
@@ -84,6 +90,7 @@ Las propiedades fundamentales de estas curvas incluyen :
  4. Control global: Esta es una de sus principales desventajas en el diseño complejo; si se mueve un solo punto de control, la forma de toda la curva se ve afectada, lo que limita la capacidad de realizar ajustes locales.
 
 El algoritmo de De Casteljau proporciona una forma geométrica e iterativa de calcular puntos sobre la curva sin evaluar directamente los polinomios, facilitando su implementación en hardware y software gráfico.
+
 ![Bezier](imagenes/Bezier.png)
   
  * 2.3.2. B-spline.
