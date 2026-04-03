@@ -28,7 +28,7 @@ La traslación es la operación más fundamental, consistente en mover un objeto
 
 * 2.1.2. Escalamiento y Proporciones Geométricas
 El escalamiento permite alterar el tamaño de un objeto mediante la multiplicación de sus coordenadas por factores de escala específicos s_x y s_y. La naturaleza del escalamiento depende de la relación entre estos factores. El escalamiento uniforme se presenta cuando s_x = s_y, lo que garantiza que el objeto conserve su forma original y sus proporciones relativas, variando únicamente su magnitud espacial. Por el contrario, el escalamiento diferencial ocurre cuando s_x \neq s_y, lo que introduce una distorsión en la forma, convirtiendo, por ejemplo, un cuadrado en un rectángulo o un círculo en una elipse. Los valores de los factores de escala determinan el efecto visual: valores superiores a 1 producen un agrandamiento, mientras que valores entre 0 y 1 resultan en una reducción del tamaño. Es fundamental señalar que el escalamiento estándar se realiza con respecto al origen de coordenadas, lo que implica que el objeto no solo cambia de tamaño sino que también se desplaza en el plano a menos que se aplique una técnica de punto fijo.
-![Escalamiento](imagenes/escala.png)
+![Escalamiento](imagenes/Escala.png)
 
 * 2.1.3. Rotación y Orientación Angular
 La transformación de puntos de un objeto situados en trayectorias circulares es llama rotación. Este tipo de transformación se especifica con un ángulo de rotación, el cual determina la cantidad de rotación de cada vértice de un polígono. 
