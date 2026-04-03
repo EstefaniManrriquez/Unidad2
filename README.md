@@ -51,16 +51,24 @@ Existen dos modalidades principales de esta operación:
 ### 2.2.Representación matricial de las transformaciones
 En el script desarrollado, cada vez que presionamos una flecha del teclado, estamos aplicando una Traslación. En computación gráfica, una traslación en un plano 2D se representa mediante una matriz de transformación de 3 x 3 (usando coordenadas homogéneas).
   1. La Matriz de TraslaciónPara mover un objeto a una nueva posición, multiplicamos el vector de posición original del objeto por una matriz de traslación T:
+     
      ![Matriz](imagenes/matriz.png)
-     Donde:
+
+
+      Donde:
      Tx: Es el desplazamiento en el eje X (en nuestro código, 0.5 o -0.5).
      ty: Es el desplazamiento en el eje vertical (en el caso de Blender, aunque usamos el eje Z para "arriba", matemáticamente en un plano 2D se documenta como el segundo componente de traslación).
      
- 2. Aplicación en el CódigoCuando el script ejecuta la línea obj.location.x += 0.5, internamente ocurre la siguiente operación matricial para calcular la nueva posición (x', y'):
-    ![Matriz](imagenes/matriz1.png)
-3. Correspondencia con el Script
+ 3. Aplicación en el CódigoCuando el script ejecuta la línea obj.location.x += 0.5, internamente ocurre la siguiente operación matricial para calcular la nueva posición (x', y'):
+
+     ![Matriz](imagenes/matriz1.png)
+
+    
+5. Correspondencia con el Script
    * Movimiento Derecha/Izquierda: Modifica el valor t_x de la matriz.
    * Movimiento Arriba/Abajo: En una representación bidimensional teórica, esto modifica el valor t_y. En nuestro script de Blender, al ser un entorno 3D, estamos afectando la componente t_z de una matriz de 4 X 4, pero el principio matemático de suma vectorial mediante producto matricial es el mismo.
+  
+     
   ![Matriz](imagenes/matriz2.png)
 
 ### 2.3. Trazo de líneas curvas.
